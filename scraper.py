@@ -99,7 +99,7 @@ def scrapeTable(root):
 #            except: pass
 
             try:
-                searchText = "fragen und Bewerbungen an" # should be "Rückfragen und Bewerbungen an" (ignore umlaute!)
+                searchText = "Rückfragen und Bewerbungen an" # should be "Rückfragen und Bewerbungen an" (ignore umlaute!)
                 candidates = pageRoot.cssselect("#eingabemaske .labelText")
                 for candidate in candidates:
                     if searchText in candidate.text:
