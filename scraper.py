@@ -105,7 +105,7 @@ def scrapeTable(root):
                     if searchText in candidate.text:
                         record["contactInfo"] = candidate.getparent().text_content()
                         break
-                record["contactInfo"]  = record["contactInfo"].replace(u"Rückfragen und Bewerbungen an", "").strip()
+                record["contactInfo"]  = record["contactInfo"].replace("Rückfragen und Bewerbungen an", "").strip()
                 record["contactInfo"]  = record["contactInfo"].replace("Rückfragen und Bewerbungen an", "").strip()
 #                print record["contactInfo"]
             except: pass
